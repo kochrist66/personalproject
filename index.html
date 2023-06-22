@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Gasoek+One&family=Jua&family=Lilita+One&family=Oswald:wght@700&family=Patua+One&family=Roboto+Slab:wght@100&family=Staatliches&family=Tinos:ital,wght@0,400;1,400;1,700&family=Yeon+Sung&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+
+        .start{
+            height: 70px;
+        }
+
+        .img{
+            height: 3px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6vS9Pq_JzqbgU5oQrMMe9G-GQKgGRzkB7Lg&usqp=CAU);
+
+        }
+
+        .name{
+            height: 100px;
+            text-align: center;
+            font-size: 50px;
+            font-style:inherit;
+            background-size: cover;
+            background-position: center;
+            background-color: rgb(169, 216, 240);
+            color: white;
+            padding: 15px;
+            box-sizing: border-box;
+
+            font-family: 'Dongle', sans-serif;
+
+        }
+
+        .menu{
+            display: flex;
+            height: 30px;
+            border:1px solid white;
+
+        }
+        .z{
+            width: 100px;
+            border:1px solid white;
+        }
+
+        .a{
+            width: 150px;
+            border:1px solid white;
+            margin: auto;
+
+        }
+
+        .a{
+            width: 150px;
+            border:1px solid white;
+            margin: auto;
+            color: rgb(111, 193, 231);
+        }
+        
+        .b{
+            width: 150px;
+            border:1px solid white;
+            margin: auto;
+            color: rgb(111, 193, 231)
+        }
+        
+        .c{
+            width: 150px;
+            border:1px solid white;
+            margin: auto;
+            color: rgb(111, 193, 231)
+        }
+        
+        .d{
+            width: 150px;
+            border:1px solid white;
+            margin: auto;
+            color: rgb(111, 193, 231)
+        }
+
+        .e{
+            width: 150px;
+            border:1px solid white;
+            margin: auto;
+            color: rgb(111, 193, 231)
+        }
+        .z{
+            width: 60px;
+            height: 28px;
+            margin: auto;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            border-radius: 5px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdGK5XOYC6DZqcThwA0cgK95fNHXT3lJOqbxqAWKpNrBNN-btXInUt25IEO0MjFSOwG6E&usqp=CAU);
+            
+        }
+
+        ul{
+            list-style: none;
+        }
+/*
+        .a, .b, .c,.d, .e > ul{
+            display: none;  공간이 사라짐 
+
+        }
+
+        */
+
+        .menu ul{
+            display: none;
+        }
+
+        .menu{
+            display: flex;
+        }
+        .title{
+            display: block;
+            height: 40px;
+
+        }
+
+        .kaz{
+            color:white;
+            font-size: 15px;
+
+        }
+        
+
+
+        .a:hover ul{
+            display :block;
+            text-align: center;
+            padding: 5px;
+            z-index: 999;
+            position: absolute;
+            color: rgb(20, 151, 212);
+            font-size: 14px;
+
+        }
+
+        .b:hover ul{
+            display :block;
+            text-align: center;
+            padding: 5px;
+            z-index: 999;
+            position: absolute;
+            color: rgb(20, 151, 212);
+            font-size: 14px;
+
+        }
+
+        .c:hover ul{
+            display :block;
+            text-align: center;
+            padding: 5px;
+            z-index: 999;
+            position: absolute;
+            color: rgb(20, 151, 212);
+            font-size: 14px;
+
+        }
+
+        .d:hover ul{
+            display :block;
+            text-align: center;
+            padding: 5px;
+            z-index: 999;
+            position: absolute;
+            color: rgb(20, 151, 212);
+            font-size: 14px;
+
+        }
+
+        .e:hover ul{
+            display :block;
+            text-align: center;
+            padding: 5px;
+            z-index: 999;
+            position: absolute;
+            color: rgb(20, 151, 212);
+            font-size: 14px;
+
+        }
+
+
+
+
+
+
+
+
+
+        .ma{
+            display: flex;
+        }
+
+        .mai{
+            width: 200px;
+        }
+
+
+
+        .main{
+            height: 200px;
+            width: 400px;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            box-sizing: border-box;
+            
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA9rrxjEd7LPT-JYyXbhT4V3ye2brBkRS-vA&usqp=CAU);
+        }
+
+        .main:hover{
+            height: 200px;
+            width: 400px;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            box-sizing: border-box;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBSaDxeoAzccZYrFmBKvKM2cg-l44Par-qKg&usqp=CAU);
+
+        }
+
+
+
+        .line{
+            width: 3px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6vS9Pq_JzqbgU5oQrMMe9G-GQKgGRzkB7Lg&usqp=CAU);
+        }
+
+        .linel{
+            width: 3px;
+            margin: 0 auto;
+        }
+        
+        .nain{
+            height: 200px;
+            width: 400px;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            box-sizing: border-box;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqZCjiSWzsZW1KqLYUm0Ffz0iXspeEll8H6g&usqp=CAU);
+        }
+
+        .nain:hover{
+            height: 200px;
+            width: 400px;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            box-sizing: border-box;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUzhswAOIT55iKpH9LnBhvHckAocNUkO78Gw&usqp=CAU);
+
+        }
+
+
+        
+
+
+        .footer{
+            display: flex;
+        }
+
+        .foo{
+            width: 50px;
+        }
+
+        .foot{
+            font-size: 5px;
+            margin: auto;
+            color: rgb(20, 151, 212)
+        
+        }
+
+        .fooo{
+            width: 5px;
+        }
+
+        .box{
+            width: 150px;
+            height: 25px;
+            border: 2px solid rgb(20, 126, 197);
+            margin: 2px;
+            border-radius: 10px;
+        }
+
+        .boox{
+            border:1px solid black;
+            width: 145px;
+            height: 20px;
+            border: none;
+            outline: none;
+            border-radius: 15px;
+            margin-left: 5px;
+
+        }
+
+        
+
+        .last{
+            font-display: right;
+            font-size: 3PX;
+            text-align: center;
+            color: rgb(20, 151, 212)
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="start"></div>
+
+    <div class="img"></div>
+
+    <div class="name">KYU-WORLD</div>
+
+    <div class="img"></div>
+    
+    <div CLASS="menu">
+        <div class="z"><a class="kaz" href="http://127.0.0.1:5500/6day_0621/%EC%B9%B4%EC%A6%88%ED%95%98.html">카즈하</a></div>
+        <div class="a">주인장
+            <ul><span class="title">
+                <li>누구</li>
+                <li>왜</li>
+                <li>뭘</li>
+            </span>
+            </ul>
+        </div>
+        <div class="b">프로그래밍
+            <ul><span class="title">
+                <li>css</li>
+                <li>JAVA SCRIPT</li>
+                <li>JAVA</li>
+            </span>
+                
+            </ul>
+        </div>
+        <div class="c">재테크
+            <ul><span class="title">
+                <li>금리</li>
+                <li>주식</li>
+                <li>코인</li>
+                <li>환율</li>
+                <li>선물</li>
+            </span>
+            </ul>
+        </div>
+        <div class="d">인공지능
+            <ul><span class="title">
+                <li>Open AI</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </span>
+            </ul>
+        </div>
+        <div class="e">사이트
+            <ul><span class="title">
+                <li>chatGPT</li>
+                <li>뤼튼</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </span>
+            </ul>
+        </div>
+        <div class="z">
+            <a class="kaz" href="http://127.0.0.1:5500/6day_0621/%EC%B9%B4%EC%A6%88%ED%95%98.html">카즈하</a></div>
+    </div>
+    <div class="img"></div>
+
+    <div class="ma">
+        <div class="mai"></div>
+        <div class="line"></div>
+        <div class="main"></div>
+        <div class="line"></div>
+        <div class="linel"></div>
+        <div class="line"></div>
+        <div class="nain"></div>
+        <div class="line"></div>
+        <div class="mai"></div>
+        
+    </div>
+    <div class="img"></div>
+    
+    
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="footer">
+        <div class="foo"></div>
+        <div class="foot">Made by 주인장</div>
+        <div class="foo"></div>
+        <div class="foot">How do you think about this hompage?</div>
+        <div class="foo"></div>
+        <div class="foot">하고 싶은 말을 남겨주세요</div>
+        <div class="fooo"></div>
+        <div class="box">
+            <input type="text" class="boox">
+        </div>
+        <div class="foo"></div>
+    </div>
+
+    <div class="img"></div>
+
+    <div  class="last">Do Not Sell or Share My Info<br>
+
+        © 2023 KYU-WORLD Labs, Inc.
+
+    </div>  
+
+               
+    
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+</body>
+</html>

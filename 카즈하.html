@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Gasoek+One&family=Jua&family=Lilita+One&family=Oswald:wght@700&family=Patua+One&family=Roboto+Slab:wght@100&family=Staatliches&family=Tinos:ital,wght@0,400;1,400;1,700&family=Yeon+Sung&display=swap" rel="stylesheet">
+
+
+    <style>
+        .kyu{
+            color: rgb(104, 159, 204);
+        }
+
+
+
+        .start{
+
+        }
+
+        .head{
+            height: 100px;
+            text-align: center;
+            font-family: 'Dongle', sans-serif;
+            font-size: 50px;
+            box-sizing: border-box;
+            
+
+
+            
+        }
+
+        .main{
+            display: flex;
+        }
+
+        .left{
+            width: 100px;
+        }
+
+        .right:{
+            width: 100px;
+        }
+
+        .foot{
+            height: 100px;
+        }
+
+        .top{
+           
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            border:1px solid black;
+            position: relative;
+
+
+        }
+
+        .q{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx8AECW6H4YrwO0usVDqh_sU7jEAX2ofqKzQ&usqp=CAU);
+            
+        }
+
+        .w{
+            position: absolute;
+            left:300px;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQESiMv7Y1qY56E5OgGUyeseoFoNlr5MeJ9Q&usqp=CAU);
+
+
+        }
+
+        .e{
+            position: absolute;
+            top: 250px;
+            left: 70px;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx7NYjjEv0LNRX5_l35MkHpPGyBQ-eXTEobA&usqp=CAU);
+        }
+
+        .r{
+            position: absolute;
+            top: 350px;
+            left: 550px;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXnZif30FbUV8YLjIIpfzoLHF1YwVKdWdFbg&usqp=CAU);
+        }
+
+        .t{
+            position: absolute;
+            top: 500px;
+            left: 100px;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5C-GSxJE_frKdqdlrMkgeUJnw3emZJo2ZOQ&usqp=CAU);
+
+        }
+
+        .y{
+            position: absolute;
+            left: 700px;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKBs2J6j-XALWB6R1p4mg4tq4zfw-ydPsFPw&usqp=CAU);
+
+        }
+
+        .u{
+            position: absolute;
+            left: 700px;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDGXG0aRQOlI9MdINgnFqd9CXO8GRmETYuXA&usqp=CAU);
+
+        }
+
+        .i{
+            position: absolute;
+            left: 900px;
+            top: 50px;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWl16F-bpAigpuRNOdaRq5yba3MuoABxBLxw&usqp=CAU);
+        }
+
+        .o{
+            position: absolute;
+            left: 1100px;
+            top: 100px;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiO11KKGzbAO2kCVjkOON3PzEvQ3XXiDAcOA&usqp=CAU):
+        }
+
+        .p{
+            position: absolute;
+            left: 1100px;
+            top: 30px;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdGK5XOYC6DZqcThwA0cgK95fNHXT3lJOqbxqAWKpNrBNN-btXInUt25IEO0MjFSOwG6E&usqp=CAU);
+        }
+
+        .a{
+            position: absolute;
+            left: 500px;
+            top: 100px;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_vMr7aw713PNnrof-uI87d4g8gh_IhSd9Ng&usqp=CAU);
+        }
+
+        .s{
+            position: absolute;
+            left: 500px;
+            top: 520px;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlilzrKBTbK5FS-YDsmML1XVknMKGjeTQWgw&usqp=CAU);
+        }
+
+        .f{
+            position: absolute;
+            left: 1100px;
+            top: 380px;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsGHJf2u7DhRSlhWoYyeJeDP4ZO-gWyi5_qw&usqp=CAU);
+        }
+
+        .g{
+            position: absolute;
+            left: 350px;
+            top: 200px;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtqaTGUMlBWomzQ1bv1bT2Vq9MrI8ICPW17A&usqp=CAU);
+        }
+
+        .h{
+            position: absolute;
+            left: 700px;
+            top: 200px;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwokV0zCPOMK4RKqGF0clGzBOJbC0DD1U8ng&usqp=CAU);
+        }
+
+        .j{
+            position: absolute;
+            left: 1000px;
+            top: 200px;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHt4wiYK3HpqZjte1T2VVuHA1LonI6SAhFZFjPD3BYshMyPBzG9mnNocdiMEXLqiB7WY&usqp=CAU);
+        }
+
+        .k{
+            position: absolute;
+            left: 800px;
+            top: 500px;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_CuZuKZTyBxAiTldpPLovbbgS4SkFJC1hNPr0r1oe_x1dOJTet5SR8F7EIUOvyJ7OXwc&usqp=CAU);
+
+
+        }
+
+        .l{
+            position: absolute;
+            left: 1200px;
+            top: 500px;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuXZv9qP4Sd4ILGIJI1VBANxoo3bUmtGryPjJsoQWJdSjtmK-u2Chd2DmaePgpg8tOmAs&usqp=CAU);
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="start"><a CLASS="kyu" href="http://127.0.0.1:5500/6day_0621/KYU-WORLD.html">KYU-WOLRD</a></div>
+    
+    <div class="head"><h2>카즈하</h2></div>
+    
+    <div class="main">
+        <div class="left"></div>
+        <div class="top">
+            <div class="q"></div>
+            <div class="w"></div>
+            <div class="e"></div>
+            <div class="r"></div>
+            <div class="t"></div>
+            <div class="y"></div>
+            <div class="u"></div>
+            <div class="i" ></div>
+            <div class="o"></div>
+            <div class="p"></div>
+            <div class="a"></div>
+            <div class="s"></div>
+            <div class="d"></div>
+            <div class="f"></div>
+            <div class="g"></div>
+            <div class="h"></div>
+            <div class="j"></div>
+            <div class="k"></div>
+            <div class="l"></div>
+            <div class="z"></div>
+            <div class="x"></div>
+            <div class="c"></div>
+            <div class="v"></div>
+            <div class="b"></div>
+        </div>
+        <div class="right"></div>
+    </div>
+    <div class="foot"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+
+
+
+
+    
+</body>
+</html>
